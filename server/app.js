@@ -5,7 +5,7 @@ const logger = require("morgan");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const port = 3000;
+const port = 3001;
 dotenv.config();
 
 mongoose
@@ -32,7 +32,7 @@ app.use("/users", usersRouter);
 app.use("/products", productsRouter);
 
 app.listen(port, () => {
-  console.log("connected to 3000");
+  console.log("connected to 3001");
 });
 
 module.exports = app;
